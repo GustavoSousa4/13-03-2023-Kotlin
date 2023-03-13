@@ -5,17 +5,17 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 
-class MainActivity : AppCompatActivity() {
+class tela2 : AppCompatActivity() {
 
-    lateinit var btnGoToTela2 : Button
+    lateinit var btnBack : Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_tela2)
 
-        btnGoToTela2 = findViewById(R.id.btnGoToTela1)
-        btnGoToTela2.setOnClickListener{
-            val intent = Intent(this, tela2::class.java)
+        btnBack = findViewById(R.id.btnVoltar)
+        btnBack.setOnClickListener{
+            val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
     }

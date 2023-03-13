@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace 'br.unicamp.cotuca.duastelas'
-    compileSdk 32
+    compileSdk 33
 
     defaultConfig {
         applicationId "br.unicamp.cotuca.duastelas"
