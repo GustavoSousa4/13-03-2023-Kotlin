@@ -17,6 +17,7 @@ class Tela3 : AppCompatActivity() {
         val btnBackAll = findViewById(R.id.btnBack1) as Button
         btnBackAll.setOnClickListener{
             val intent = Intent(this, MainActivity::class.java)
+            intent.flags = Intent.FLAG_ACTIVITY_SINGLE_TOP
             startActivity(intent)
         }
     }
